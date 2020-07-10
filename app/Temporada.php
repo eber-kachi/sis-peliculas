@@ -4,13 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class Temporada extends Model
 {
     //
-    protected $table = 'role';
-    protected $primaryKey = 'idRol';
+    protected $table = 'temporadas';
+    protected $primaryKey = 'idTemporada';
     protected $fillable = [
         'nombre',
-        'estado',
-    ];
+        ];
 }
