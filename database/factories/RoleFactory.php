@@ -7,7 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Role::class, function (Faker $faker) {
     return [
-        'nombre' => $faker->text,
-        'estado' => $faker->randomElement([1, 0])
+        //
+        'nombre' =>$faker->text,
+        'estado' =>$faker-> randomElement([1,0])
     ];
 });
