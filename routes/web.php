@@ -16,8 +16,11 @@ use SebastianBergmann\Environment\RuntimeTest;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.client');
 })->name('welcome.show');
+
+
+
 Route::get('/nilda',function (){
     return view('nilda');
 });
