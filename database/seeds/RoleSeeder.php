@@ -14,5 +14,11 @@ class RoleSeeder extends Seeder
     {
         //
         factory(Role::class)->times(48)->create();
+        $role = new Role();
+        $role->name = 'Administrador';
+        $role->save();
+        $role = new Role();
+        $role->name = 'Cliente';
+        $role->save();
     }
 }
