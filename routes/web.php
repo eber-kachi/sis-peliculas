@@ -16,7 +16,7 @@ use SebastianBergmann\Environment\RuntimeTest;
 */
 
 Route::get('/', function () {
-    return view('layouts.client');
+    return view('layouts.admin');
 })->name('welcome.show');
 
 
@@ -82,3 +82,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('usuarios','usuarioController');
 //Route::get('/create','createController');
 Route::get('/buscarUsuario','UsuarioController@buscarUsuario')->name('usuario.buscar');
+
+//generos
+Route::resource('capitulos','CapituloController');
+//generos
+Route::resource('generos', 'GeneroController');
